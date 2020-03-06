@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: inline-block;
+    background-color: rgb(230, 32, 230);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 50px;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 900px;
+    margin: 10px;
+}
+
+#list {
+    border: 1px solid black;
+    width: 30vw;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#map {
+    border-radius: 10px;
+    width: 70vw;
+}
+
+/*------------ FOOTER -----------*/
+
+#footer {
+    background-color: #d2d2d4;
+    position: static;
+    width: auto;
+    height: 350px;
+    margin-top: 15px;
+    border-radius: 30px;
+  }
+  #get-in-touch {
+    text-align: center;
+    padding-top: 10px;
+  }
+  #grid-for-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(275px) 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "form icons"
+       "form icons"
+       "form icons"
+       "form icons";
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  #form {
+    display: grid;
+    margin: 10px;
+    font-family: Roboto, Courier;
+  }
+  #comments {
+    height: 50px;
+    width: auto;
+    margin-bottom: 10px;
+  }
+  #icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "footer-text footer-text"
+    "icon-flex icon-flex"
+    "icon-flex icon-flex"
+    "icon-flex icon-flex"
+    "icon-flex icon-flex";
+  }
+  #footer-text {
+    grid-area: 1 / span 2;
+  }
+  .icon-flex{
+    display: flex;
+    justify-content: flex-start;
+    overflow-wrap: break-word;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  h3 { /* <h3> reserved for icon text */
+    font-size: 10px;
+    font-family: Roboto, Courier;
+    text-align: left;
+  }
+  .icon {
+    width: 30px;
+    height: 30px
+  }
+  /*  - - - - mobile footer  
+  @media screen and (max-width: 500px) {
+      #footer {
+          background-color: white;
+      display: flex;
+      flex-direction: column;
+      flex-flow: column;
+      width: auto;
+      height: auto;
+    }
+    #grid-for-footer {
+      display: flex;
+      flex-direction: column;
+      flex-flow: column;
+      width: auto;
+      height: auto;
+    }
+    #form {
+      display: flex;
+      flex-direction: column;
+      flex-flow: column;
+      width: auto;
+      height: auto;
+    }
+    #icons {
+      display: flex;
+      flex-direction: column;
+      flex-flow: column;
+      width: auto;
+      height: auto;
+    }
+    #get-in-touch{
+      display: flex;
+      flex-direction: column;
+      flex-flow: column;
+      width: auto;
+      height: auto;
+    }
+    #footer-button {
+      margin: auto;
+      margin-top: 10px;
+    }
+}
+- - - - */
