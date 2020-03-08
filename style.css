@@ -14,17 +14,18 @@
     font-size: 50px;
 }
 
-#main{
+.main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 900px;
+    height: auto;
     margin: 10px;
 }
 
-#list {
+.list {
     border: 1px solid black;
-    width: 30vw;
+    width: 20vw;
+    height: auto;
     margin-right: 10px;
     border-radius: 10px;
     display: flex;
@@ -34,7 +35,35 @@
 
 #map {
     border-radius: 10px;
-    width: 70vw;
+    width: 80vw;
+    height: 100vh
+}
+
+/*------------RESTAURANT PAGE--------*/
+
+#home-link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+  
+}
+
+#rest-main {
+
+}
+
+#rest-list {
+
+}
+
+#restlist p {
+  
+}
+
+#rest-map{
+  width: 80vw;
+  height: 60vh;
+  border-radius: 15px;
 }
 
 /*------------ FOOTER -----------*/
