@@ -8,20 +8,32 @@
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="crossorigin=""></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
+    </style>
 </head>
 
 <body>
     <header class="header">
-        <a id="home-link" href="/index.html">YELP! ...ington</a>
+        <a id="home-link" href="/index.html">BurlingYELP!</a>
     </header>
     <div class="main">
-        <div id="rest-list" class="list">
+        <div id="rest-list">
             <p id="name"></p>
-            <p id="address"></p>
-            <p id="phone"></p>
-            <p id="website"></p>
-            <p id="hours"></p>
             <p id="notes"></p>
+            <div id="info">
+                <p id="address"></p>
+                <br>
+                <p id="phone"></p>
+                <br>
+                <p>
+                    <a id="website">Website</a>
+                </p>
+                <br>
+                <p id="hours"></p>
+            </div>
         </div>
         <div id="rest-map"></div>
     </div>

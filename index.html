@@ -8,63 +8,69 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
-   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
    crossorigin=""></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
+  </style>
 </head>
 <body id="body">
   <header class="header">
-    <h1>YELP! ...ington</h1>
+    <a id="home-link" href="/index.html">BurlingYELP!</a>
   </header>
   <div class="main">
     <div class="list">
+      <p id="list-head">LOCAL RESTAURANTS</p>
       <p>
-        <a href="restPage.html#ahli-babas-kabob">Ahli Baba's Kabob Shop</a>
+        <a href="restPage.html#ahli-babas-kabob" class="list-items">Ahli Baba's Kabob Shop</a>
       </p>
       <p>
-        <a href="restPage.html#american-flatbread">American Flatbread</a>
+        <a href="restPage.html#american-flatbread" class="list-items">American Flatbread</a>
       </p>
       <p>
-        <a href="restPage.html#august-first">August First</a>
+        <a href="restPage.html#august-first" class="list-items">August First</a>
       </p>
       <p>
-        <a href="restPage.html#city-market">City Market</a>
+        <a href="restPage.html#city-market" class="list-items">City Market</a>
       </p>
       <p>
-        <a href="restPage.html#el-cortijo">El Cortijo Taqueria</a>
+        <a href="restPage.html#el-cortijo" class="list-items">El Cortijo Taqueria</a>
       </p>
       <p>
-        <a href="restPage.html#farmhouse-grill">Farmhouse Tap & Grill</a>
+        <a href="restPage.html#farmhouse-grill" class="list-items">Farmhouse Tap & Grill</a>
       </p>
       <p>
-        <a href="restPage.html#gaku-ramen">Gaku Ramen</a>
+        <a href="restPage.html#gaku-ramen" class="list-items">Gaku Ramen</a>
       </p>
       <p>
-        <a href="restPage.html#hen-of-the-wood">Hen of the Wood</a>
+        <a href="restPage.html#hen-of-the-wood" class="list-items">Hen of the Wood</a>
       </p>
       <p>
-        <a href="restPage.html#henrys-diner">Henry's Diner</a>
+        <a href="restPage.html#henrys-diner" class="list-items">Henry's Diner</a>
       </p>
       <p>
-        <a href="restPage.html#honey-road">Honey Road</a>
+        <a href="restPage.html#honey-road" class="list-items">Honey Road</a>
       </p>
       <p>
-        <a href="restPage.html#kountry-kart-deli">Kountry Kart Deli</a>
+        <a href="restPage.html#kountry-kart-deli" class="list-items">Kountry Kart Deli</a>
       </p>
       <p>
-        <a href="restPage.html#leunigs-bistro">Leunig's Bistro</a>
+        <a href="restPage.html#leunigs-bistro" class="list-items">Leunig's Bistro</a>
       </p>
       <p>
-        <a href="restPage.html#mr-mikes">Mr. Mike's</a>
+        <a href="restPage.html#mr-mikes" class="list-items">Mr. Mike's</a>
       </p>
       <p>
-        <a href="restPage.html#pascolo-ristorante">Pascolo Ristorante</a>
+        <a href="restPage.html#pascolo-ristorante" class="list-items">Pascolo Ristorante</a>
       </p>
       <p>
-        <a href="restPage.html#single-pebble">A Single Pebble</a>
+        <a href="restPage.html#single-pebble" class="list-items">A Single Pebble</a>
       </p>
       <p>
-        <a href="restPage.html#thai-dishes">Thai Dishes</a>
+        <a href="restPage.html#thai-dishes" class="list-items">Thai Dishes</a>
       </p>
     </div>
     <div id="map"></div>

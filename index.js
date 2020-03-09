@@ -1,4 +1,4 @@
-let homeMap = L.map('map').setView([44.477, -73.214], 16);
+let homeMap = L.map('map').setView([44.4773, -73.215], 17);
 
 L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
 	maxZoom: 19,
