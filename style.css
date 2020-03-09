@@ -1,3 +1,5 @@
+/*---------------------- USED IN BOTH INDEX & RESTPAGE---------------------------  */
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +18,10 @@
     font-family: 'Fontdiner Swanky', cursive;
 }
 
+#home-link {
+  font-size: calc(55px + 1.3vw);
+}
+
 .main{
     display: flex;
     flex-direction: row;
@@ -24,10 +30,13 @@
     margin: 10px;
 }
 
+/*---------------------------------- INDEX ONLY --------------------------------  */
+
 .list {
     background-color: rgb(141, 28, 141);
     border: 1px solid black;
-    width: 20vw;
+    width: auto;
+    
     height: auto;
     margin-right: 10px;
     border-radius: 10px;
@@ -89,7 +98,7 @@ a {
   font-family: 'Fontdiner Swanky', cursive;
   padding-top: 4%;
   padding-bottom: 4%;
-  font-size: 20px;
+  font-size: 1.5em;
   border-bottom-style: double;
   margin-left: 10%;
   margin-right: 10%;
@@ -181,10 +190,44 @@ a {
     width: 30px;
     height: 30px
   }
-  /*  - - - - mobile footer  
+
+  #footer-button {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 70px;
+    justify-content: left;
+    background-color: rgb(95, 97, 95); 
+    border: none;
+    font-family: Roboto, Courier;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  /*  - - - - fonts - - - - */ 
+.text-large {
+  font-size: 40px;
+  font-family: Roboto, Courier;
+}
+.text-medium {
+  font-size: 20px;
+  font-family: Roboto, Courier;
+  font-weight: 300;
+}
+.text-small {
+  font-size: 16px;
+  font-family: Roboto, Courier;
+}
+
+  
+
+  /*------------------ MOBILE HOME PAGE  -------------------*/  
   @media screen and (max-width: 500px) {
       #footer {
-          background-color: white;
+          background-color:#D2D2D4;
       display: flex;
       flex-direction: column;
       flex-flow: column;
@@ -223,39 +266,10 @@ a {
       margin: auto;
       margin-top: 10px;
     }
-}
-- - - - */
-
-/*  - - - - fonts - - - - */ 
-.text-large {
-  font-size: 40px;
-  font-family: Roboto, Courier;
-}
-.text-medium {
-  font-size: 20px;
-  font-family: Roboto, Courier;
-  font-weight: 300;
-}
-.text-small {
-  font-size: 16px;
-  font-family: Roboto, Courier;
+    #home-link {
+      font-size: calc(35px + 1.5vw);
+    }
 }
 
-#footer-button {
-  font-size: 16px;
-  margin-top: 10px;
-  margin-right: 70px;
-  justify-content: left;
-}
 
-.buttonL {
-  background-color: rgb(95, 97, 95); 
-  border: none;
-  font-family: Roboto, Courier;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: none;
-}
+
