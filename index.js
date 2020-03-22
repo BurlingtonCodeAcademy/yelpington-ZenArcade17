@@ -1,6 +1,6 @@
 //--------------------- MAP -------------------------------------//
 
-let homeMap = L.map('map').setView([44.4773, -73.215], 17);
+let homeMap = L.map('map').setView([44.4773, -73.215], 18);
 
 L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
 	maxZoom: 19,
@@ -15,7 +15,7 @@ fetch(`https://json-server.burlingtoncodeacademy.now.sh/restaurants`)
 })
 .then((restInfo) => {
     restInfo.forEach((rest) => {
-		//placeMark(rest.address, rest.name, rest.id)
+		placeMark(rest.address, rest.name, rest.id)
 	})
 })
 

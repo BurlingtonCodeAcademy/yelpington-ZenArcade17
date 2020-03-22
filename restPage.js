@@ -53,10 +53,10 @@ function placeMark(address, restName) {
             let info = locInfo[0]
             let lat = info.lat
             let lon = info.lon
-            let restMap = L.map('rest-map').setView([lat, lon], 17);
+            let restMap = L.map('rest-map').setView([lat, lon], 19);
 
             L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-                maxZoom: 19,
+                maxZoom: 22,
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
             }).addTo(restMap);
 
