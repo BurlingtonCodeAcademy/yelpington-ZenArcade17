@@ -7,19 +7,22 @@
 }
 
 .header {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 20vh;
     background-image: url('Images/Burlington_vermont_skyline.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
-    text-align: center;
     border-radius: 30px;
     font-size: 100px;
     font-family: 'Fontdiner Swanky', cursive;
 }
 
 #home-link {
-  font-size: calc(55px + 1.3vw);
+  font-size: calc(75px + 1.6vw);
 }
 
 .main{
@@ -35,26 +38,27 @@
 .list {
     background-color: rgb(141, 28, 141);
     border: 1px solid black;
-    width: auto;
-    
+    width: 20vw;
     height: auto;
     margin-right: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px;
 }
 
 #list-head {
   
   font-family: 'Fontdiner Swanky', cursive;
   border-bottom: double;
+  font-size: 1.4em
 }
 
 .list-items {
   font-family: 'Caveat Brush', cursive;
   color: black;
+  font-size: 2em
   
 }
 
@@ -70,10 +74,6 @@ a {
   text-decoration: none;
   color: rgb(230, 16, 87);
   
-}
-
-#rest-main {
-
 }
 
 #rest-list {
@@ -224,7 +224,7 @@ a {
 
   
 
-  /*------------------ MOBILE HOME PAGE  -------------------*/  
+  /*------------------ MOBILE HOME PAGE  -------------------*/
   @media screen and (max-width: 500px) {
       #footer {
           background-color:#D2D2D4;
