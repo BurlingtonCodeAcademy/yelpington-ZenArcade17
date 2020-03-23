@@ -4,23 +4,23 @@
     box-sizing: border-box;
 }
 
+/*-------------HOMEPAGE AND RESTAURANT PAGE-------*/
+
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
     height: 20vh;
     background-image: url('Images/Burlington_vermont_skyline.jpg');
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 98.7vw;
     border-radius: 30px;
-    font-size: 100px;
     font-family: 'Fontdiner Swanky', cursive;
 }
 
 #home-link {
-  font-size: calc(75px + 1.6vw);
+  font-size: calc(65px + 1.0vw);
 }
 
 .main{
@@ -31,11 +31,14 @@
     margin: 10px;
 }
 
+/*----------------HOMEPAGE----------------*/
+
 .list {
     background-color: rgb(141, 28, 141);
     border: 1px solid black;
     width: 20vw;
-    height: auto;
+    
+    min-height: 100vh;
     margin-right: 10px;
     border-radius: 10px;
     display: flex;
@@ -48,20 +51,20 @@
   
   font-family: 'Fontdiner Swanky', cursive;
   border-bottom: double;
-  font-size: 1.4em
+  font-size: 1em
 }
 
 .list-items {
   font-family: 'Caveat Brush', cursive;
   color: black;
-  font-size: 2em
+  font-size: 1.1em
   
 }
 
 #map {
     border-radius: 10px;
     width: 80vw;
-    height: 100vh
+    height: auto
 }
 
 /*------------RESTAURANT PAGE--------*/
@@ -87,7 +90,7 @@ a {
   padding-bottom: 4%;
   padding-left: 4%;
   padding-right: 4%;
-  font-size: 30px;
+  font-size: 16px;
 }
 
 #name{
@@ -95,7 +98,7 @@ a {
   font-family: 'Fontdiner Swanky', cursive;
   padding-top: 4%;
   padding-bottom: 4%;
-  font-size: 20px;
+  font-size: 18px;
   border-bottom-style: double;
   margin-left: 10%;
   margin-right: 10%;
@@ -107,7 +110,7 @@ a {
   padding-left: 4%;
   padding-right: 4%;
   font-family: 'Caveat Brush', cursive;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 #website {
