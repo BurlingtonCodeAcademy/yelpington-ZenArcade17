@@ -1,5 +1,3 @@
-/*---------------------- USED IN BOTH INDEX & RESTPAGE---------------------------  */
-
 *{
     margin: 0;
     padding: 0;
@@ -32,8 +30,6 @@
     height: auto;
     margin: 10px;
 }
-
-/*---------------------------------- INDEX ONLY --------------------------------  */
 
 .list {
     background-color: rgb(141, 28, 141);
@@ -99,7 +95,7 @@ a {
   font-family: 'Fontdiner Swanky', cursive;
   padding-top: 4%;
   padding-bottom: 4%;
-  font-size: 2.1em;
+  font-size: 20px;
   border-bottom-style: double;
   margin-left: 10%;
   margin-right: 10%;
@@ -228,7 +224,7 @@ a {
   /*------------------ MOBILE HOME PAGE  -------------------*/
   @media screen and (max-width: 500px) {
       #footer {
-          background-color:#D2D2D4;
+          background-color: white;
       display: flex;
       flex-direction: column;
       flex-flow: column;
@@ -267,10 +263,39 @@ a {
       margin: auto;
       margin-top: 10px;
     }
-    #home-link {
-      font-size: calc(35px + 1.5vw);
-    }
 }
 
 
+/*  - - - - fonts - - - - */ 
+.text-large {
+  font-size: 40px;
+  font-family: Roboto, Courier;
+}
+.text-medium {
+  font-size: 20px;
+  font-family: Roboto, Courier;
+  font-weight: 300;
+}
+.text-small {
+  font-size: 16px;
+  font-family: Roboto, Courier;
+}
 
+#footer-button {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 70px;
+  justify-content: left;
+}
+
+.buttonL {
+  background-color: rgb(95, 97, 95); 
+  border: none;
+  font-family: Roboto, Courier;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
