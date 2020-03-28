@@ -1,18 +1,125 @@
-<script>
-let name = document.location.pathname.slice(1);
-
-if (!name) {
-  console.log("no place name specfied");
-} else {
-  console.log("fetching place named '" + name + "'");
-
-  fetch(name + '.json')
-    .then(function (response) {
-      return response.text();
-    })
-    .then(function (myText) {
-      console.log(myText);
-    });
-}
-
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
+  </style>
+</head>
+<body id="body">
+  <header class="header">
+    <a id="home-link" href="/index.html">BurlingYELP!</a>
+  </header>
+  <div class="main">
+    <div class="list">
+      <p id="list-head">LOCAL RESTAURANTS</p>
+      <p>
+        <a href="restPage.html#ahli-babas-kabob" class="list-items">Ahli Baba's Kabob Shop</a>
+      </p>
+      <p>
+        <a href="restPage.html#american-flatbread" class="list-items">American Flatbread</a>
+      </p>
+      <p>
+        <a href="restPage.html#august-first" class="list-items">August First</a>
+      </p>
+      <p>
+        <a href="restPage.html#city-market" class="list-items">City Market</a>
+      </p>
+      <p>
+        <a href="restPage.html#el-cortijo" class="list-items">El Cortijo Taqueria</a>
+      </p>
+      <p>
+        <a href="restPage.html#farmhouse-grill" class="list-items">Farmhouse Tap & Grill</a>
+      </p>
+      <p>
+        <a href="restPage.html#gaku-ramen" class="list-items">Gaku Ramen</a>
+      </p>
+      <p>
+        <a href="restPage.html#hen-of-the-wood" class="list-items">Hen of the Wood</a>
+      </p>
+      <p>
+        <a href="restPage.html#henrys-diner" class="list-items">Henry's Diner</a>
+      </p>
+      <p>
+        <a href="restPage.html#honey-road" class="list-items">Honey Road</a>
+      </p>
+      <p>
+        <a href="restPage.html#kountry-kart-deli" class="list-items">Kountry Kart Deli</a>
+      </p>
+      <p>
+        <a href="restPage.html#leunigs-bistro" class="list-items">Leunig's Bistro</a>
+      </p>
+      <p>
+        <a href="restPage.html#mr-mikes" class="list-items">Mr. Mike's</a>
+      </p>
+      <p>
+        <a href="restPage.html#pascolo-ristorante" class="list-items">Pascolo Ristorante</a>
+      </p>
+      <p>
+        <a href="restPage.html#single-pebble" class="list-items">A Single Pebble</a>
+      </p>
+      <p>
+        <a href="restPage.html#thai-dishes" class="list-items">Thai Dishes</a>
+      </p>
+    </div>
+    <div id="map"></div>
+  </div>
+  <section id="footer">
+    <div id="get-in-touch" class="text-medium">Questions or comments?<strong> Get in touch</strong></div>
+    <div id="grid-for-footer">
+      
+      <form id="form">
+        <input type="text" placeholder="First Name" style="vertical-align: top;"></input><br>
+        <input type="text" placeholder="Last Name"></input><br>
+        <textarea placeholder="Message" style="text-align: left;" rows="5" cols="5"></textarea>
+        
+        <button id="footer-button" class="buttonL">SUBMIT</button>
+      </form>
+      
+      <div id="icons">
+        <h3 id="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis incidunt expedita quo esse, ad temporibus, qui eos saepe praesentium possimus vero sunt unde. Vitae architecto quidem distinctio maiores optio.</h3>
+        <div class="icon-flex">
+          <img src="Images/footerlink-dribbble.png" class="icon"></img>
+          <h3>Dribble</h3>
+        </div>
+        <div class="icon-flex">
+          <img src="Images/footerlink-email.png" class="icon"></img>
+          <h3>Yelpington-Glory@skippidtybeebop.com</h3>
+        </div>
+        <div class="icon-flex">
+          <img src="Images/footerlink-instagram.png" class="icon"></img>
+          <h3>Instagram</h3>
+        </div>
+        <div class="icon-flex">
+          <img src="Images/footerlink-phone.png" class="icon"></img>
+          <h3>(666).666.6666</h3>
+        </div>
+        <div class="icon-flex">
+          <img src="Images/footerlink-twitter.png" class="icon"></img> 
+          <h3>@YelpingtonYeah!</h3> 
+        </div>
+        <div class="icon-flex">
+          <img src="Images/footerlink-facebook.png" class="icon"></img>
+          <h3>Facebook</h3>
+        </div>
+        <div class="icon-flex">
+          <img src="Images/footerlink-home.png" class="icon"></img>
+          <h3>10050 Cielo Drive</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>
