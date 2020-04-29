@@ -13,29 +13,29 @@ fetch(`https://json-server.burlingtoncodeacademy.now.sh/restaurants`)
 })
 .then((restInfo) => {
     restInfo.forEach((rest) => {
-		//placeMark(rest.address, rest.name, rest.id)
+		placeMark(rest.address, rest.name, rest.id)
 	})
 })
 
-//function placeMark(address, restName, restId) {
-//	
-//	fetch(`https://nominatim.openstreetmap.org/search/?q=${address}&format=json`)
-//		.then((data) => {
-//			return data.json()
-//		})
-//		.then((locInfo) => {
-//			let info = locInfo[0]
-//			let lat = info.lat
-//			let lon = info.lon
-//			let thisMarker = L.marker([lat, lon]).addTo(homeMap).bindPopup(restName)
-//			thisMarker.on('mouseover', () => {
-//				thisMarker.openPopup() 
-//			})
-//			thisMarker.on('click', () => {
-//				window.location = `/restPage.html#${restId}`
-//			})
-//		})
-//
-//}
+function placeMark(address, restName, restId) {
+	
+	fetch(`https://nominatim.openstreetmap.org/search/?q=${address}&format=json`)
+		.then((data) => {
+			return data.json()
+		})
+		.then((locInfo) => {
+			let info = locInfo[0]
+			let lat = info.lat
+			let lon = info.lon
+			let thisMarker = L.marker([lat, lon]).addTo(homeMap).bindPopup(restName)
+			thisMarker.on('mouseover', () => {
+				thisMarker.openPopup() 
+			})
+			thisMarker.on('click', () => {
+				window.location = `/restPage.html#${restId}`
+			})
+		})
+
+}
 
 
